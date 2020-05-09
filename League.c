@@ -1,8 +1,6 @@
 //
 // Created by tal5s on 05/05/2020.
 //
-#define _GNU_SOURCE
-
 #include "Team.h"
 #include "Match.h"
 #include "League.h"
@@ -31,13 +29,6 @@ League *LeagueCreate()
         exit(1);
     }
     return league;
-}
-
-void LeagueDestroy(League *league)
-{
-    free(league);
-    free(league->teams);
-    free(league->matches);
 }
 
 void read_teams(League *league, const char *file_name)
