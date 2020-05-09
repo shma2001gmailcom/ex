@@ -13,6 +13,4 @@ typedef struct
 
 Team *TeamCreate(const char *name);
 
-void TeamDestroy(Team *team);
-
 #endif //EX4_TEAM_H

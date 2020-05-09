@@ -19,8 +19,6 @@ typedef struct {
 
 League *LeagueCreate();
 
-void LeagueDestroy(League *league);
-
 void read_teams(League *league, const char *file_name);
 
 void read_matches(League *league, const char *file_name);
